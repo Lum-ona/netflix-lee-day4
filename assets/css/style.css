@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background-color: black;
+  height: 500vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+.logo_div > img {
+  width: 150px;
+}
+.sign_div > button {
+  width: 80px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+.sign_div > button:hover {
+  background-color: rgb(211, 70, 70);
+}
+.hero {
+  width: 100vw;
+  height: 85vh;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7cee2527-d2cc-4cc9-99f6-d1375e72d46e/8109c085-70af-4519-98e5-3fe9827411eb/KE-en-20230103-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.hero::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.678);
+  border-bottom: solid 8px rgb(42, 42, 42);
+}
+.hero_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+}
+
+.hero_content > h1 {
+  font-size: 40px;
+  font-family: fantasy;
+  text-align: center;
+}
+.hero_content > p {
+  font-size: 20px;
+}
+form > input:nth-child(1) {
+  width: 280px;
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+}
+form > input:nth-child(2) {
+  width: 180px;
+  height: 45px;
+  background-color: red;
+  border: none;
+  color: white;
+  margin-left: -4px;
+}
+form > input:nth-child(2):hover {
+  background-color: rgb(211, 70, 70);
+}
+form > input:nth-child(1):focus {
+  scale: 1.2;
+}
+main {
+  margin-top: 85vh;
+}
+.tv_section {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  padding-bottom: 50px;
+  border-bottom: solid 8px rgb(42, 42, 42);
+}
+.tv_section > div > img {
+  width: 400px;
+}
